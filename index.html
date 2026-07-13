@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ksenia Varga | Photonics Researcher</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+    
+    .hero {
+      height: 100vh;
+      background-image: url('hero-background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.38);
+      z-index: 1;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 20px;
+      max-width: 900px;
+    }
+    
+    .hero h1 {
+      font-size: clamp(2.8rem, 8vw, 5rem);
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -2px;
+    }
+    
+    .hero p {
+      font-size: clamp(1.15rem, 3vw, 1.6rem);
+      margin-bottom: 40px;
+      opacity: 0.95;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 16px 40px;
+      background: linear-gradient(90deg, #00f0ff, #ff00aa);
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(0, 240, 255, 0.4);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 35px rgba(255, 0, 170, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ksenia Varga</h1>
+      <p>Photonics Researcher and Materials Chemist</p>
+      
+      <a href="#about" class="btn">
+        DON'T PANIC!
+      </a>
+    </div>
+  </section>
+
+  <!-- You can add more sections below later (About, Projects, etc.) -->
+
+  <section id="about" style="padding: 80px 20px; max-width: 800px; margin: 0 auto;">
+    <h2 style="text-align: center; margin-bottom: 30px;">More coming soon...</h2>
+    <p style="text-align: center; color: #555;">
+      This is your website. We'll add projects, research, and more sections together!
+    </p>
+  </section>
+
+</body>
+</html>
