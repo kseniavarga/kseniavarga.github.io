@@ -7,8 +7,9 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-family: Calibri, Arial, sans-serif;
       color: white;
+      background: #1e1e1e;
       line-height: 1.6;
     }
     .hero {
@@ -19,14 +20,12 @@
       background-attachment: fixed;
       position: relative;
       padding: 80px 20px;
-      display: flex;
-      align-items: center;
     }
     .hero::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.65);
+      background: rgba(0, 0, 0, 0.7);
     }
     .content {
       position: relative;
@@ -35,33 +34,29 @@
       margin: 0 auto;
     }
     h1 {
-      font-size: 3.5rem;
+      font-size: 2.8rem;
       margin-bottom: 50px;
-      text-align: center;
     }
     .entry {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 30px;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       flex-wrap: wrap;
+      gap: 30px;
     }
-    .text {
-      flex: 1;
-      min-width: 300px;
-    }
-    .text h2 { font-size: 1.8rem; margin-bottom: 8px; }
-    .text a { color: #00ddff; text-decoration: none; }
+    .text { flex: 1; min-width: 300px; }
+    .text h2 { font-size: 1.65rem; margin-bottom: 6px; }
+    .text a { color: #8f011b; text-decoration: none; }
     .text a:hover { text-decoration: underline; }
     .logo {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       object-fit: contain;
-      flex-shrink: 0;
     }
     .back {
       display: inline-block;
-      margin: 20px 0;
+      margin-bottom: 30px;
       color: #aaa;
       text-decoration: none;
     }
@@ -72,7 +67,7 @@
 
   <div class="hero">
     <div class="content">
-      <a href="index.html" class="back">← Back to Home</a>
+      <a href="about.html" class="back">← Back to About</a>
       <h1>Education</h1>
 
       <div class="entry">
@@ -80,7 +75,7 @@
           <h2><a href="https://www.uottawa.ca/en" target="_blank">University of Ottawa</a></h2>
           <p>Department of Electrical and Computer Engineering</p>
           <p><strong>PhD Candidate</strong></p>
-          <h2><a href="https://www.nonlinearphotonics.ca" target="_blank">Nonlinear Photonics Group</a></h2>
+          <p>Supervisor: <a href="https://www.uottawa.ca/faculty-engineering/people/ksenia-dolgaleva" target="_blank">Dr. Ksenia Dolgaleva</a></p>
         </div>
         <img src="UO_logo.png" alt="uOttawa" class="logo">
       </div>
@@ -90,8 +85,9 @@
           <h2><a href="https://carleton.ca/" target="_blank">Carleton University</a></h2>
           <p>Department of Chemistry</p>
           <p><strong>MSc — 2022</strong></p>
+          <p>Supervisors: <a href="hhttps://www.dal.ca/faculty/science/chemistry/faculty-staff/our-faculty/charles-macdonald.html" target="_blank">Dr. Charles L.B. Macdonald</a></p> and <a href="https://carleton.ca/barrylab/sean-barry/" target="_blank">Dr. Sean T. Barry</a></p>
         </div>
-        <img src="CUlogo.png" alt="Carleton" class="logo">
+        <img src="CU_logo.png" alt="Carleton" class="logo">
       </div>
 
       <div class="entry">
