@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education — Ksenia Varga</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      color: white;
+      line-height: 1.6;
+    }
+    .hero {
+      min-height: 100vh;
+      background-image: url('muted-background.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      padding: 80px 20px;
+      display: flex;
+      align-items: center;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .entry {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+    .text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .text h2 { font-size: 1.8rem; margin-bottom: 8px; }
+    .text a { color: #00ddff; text-decoration: none; }
+    .text a:hover { text-decoration: underline; }
+    .logo {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .back {
+      display: inline-block;
+      margin: 20px 0;
+      color: #aaa;
+      text-decoration: none;
+    }
+    .back:hover { color: white; }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="content">
+      <a href="index.html" class="back">← Back to Home</a>
+      <h1>Education</h1>
+
+      <div class="entry">
+        <div class="text">
+          <h2><a href="https://www.uottawa.ca/en" target="_blank">University of Ottawa</a></h2>
+          <p>Department of Electrical and Computer Engineering</p>
+          <p><strong>PhD Candidate</strong></p>
+          <h2><a href="https://www.nonlinearphotonics.ca" target="_blank">Nonlinear Photonics Group</a></h2>
+        </div>
+        <img src="UO_logo.png" alt="uOttawa" class="logo">
+      </div>
+
+      <div class="entry">
+        <div class="text">
+          <h2><a href="https://carleton.ca/" target="_blank">Carleton University</a></h2>
+          <p>Department of Chemistry</p>
+          <p><strong>MSc — 2022</strong></p>
+        </div>
+        <img src="CUlogo.png" alt="Carleton" class="logo">
+      </div>
+
+      <div class="entry">
+        <div class="text">
+          <h2><a href="https://carleton.ca/" target="_blank">Carleton University</a></h2>
+          <p>Department of Chemistry</p>
+          <p><strong>BSc — 2020</strong></p>
+        </div>
+        <img src="CU_logo.png" alt="Carleton" class="logo">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
