@@ -21,38 +21,42 @@
       align-items: center;
       flex-wrap: wrap;
     }
-    .text {
-      flex: 1;
-      min-width: 300px;
-    }
-    .text h1 {
-      font-size: 3.2rem;
-      margin-bottom: 20px;
-    }
-    .photo {
-      flex: 1;
-      min-width: 300px;
-      text-align: center;
-    }
+    .text { flex: 1; min-width: 300px; }
+    .text h1 { font-size: 3.2rem; margin-bottom: 20px; }
+    .photo { flex: 1; min-width: 300px; text-align: center; }
     .photo img {
       max-width: 100%;
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 60px;
+    ul {
+      margin-top: 30px;
+      font-size: 1.15rem;
     }
-    .card {
-      background: #2a2a2a;
-      padding: 25px;
-      border-radius: 12px;
-      text-align: center;
-      transition: transform 0.2s;
+    ul li {
+      margin: 16px 0;
     }
-    .card:hover { transform: translateY(-8px); }
+    ul li a {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    ul li a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+    }
+
+    /* Custom Gradients */
+    .edu-link    { background: linear-gradient(90deg, #8461f4, #81d8e5); }
+    .job-link    { background: linear-gradient(90deg, #5c6ff4, #e870c2); }
+    .chem-link   { background: linear-gradient(90deg, #e76366, #8355eb); }
+    .photon-link { background: linear-gradient(45deg, #811460, #ff4291, #f7ff3c); }
+    .other-link  { background: linear-gradient(45deg, #007daf, #c771d4, #ffb829); }
+
     .connect {
       text-align: center;
       padding: 60px 20px;
@@ -67,12 +71,12 @@
       <h1>Hello!</h1>
       <p>and welcome! I am Ksenia and I am passionate about exploring light, materials, semiconductors and quantum frontiers. This website showcases selected projects and experiences from my journey across chemistry and photonics.</p>
       
-      <ul style="margin-top: 30px; font-size: 1.1rem;">
-        <li><a href="education.html"><strong>Education</strong></a></li>
-        <li><strong>Select Job Experiences</strong></li>
-        <li><strong>Chem Projects</strong></li>
-        <li><strong>Photon Projects</strong></li>
-        <li><strong>Other stuff</strong></li>
+      <ul>
+        <li><a href="education.html" class="edu-link"><strong>Education</strong></a></li>
+        <li><a href="#" class="job-link"><strong>Select job experiences</strong></a></li>
+        <li><a href="#" class="chem-link"><strong>Chem projects</strong></a></li>
+        <li><a href="#" class="photon-link"><strong>Photon projects</strong></a></li>
+        <li><a href="#" class="other-link"><strong>Other stuff</strong></a></li>
       </ul>
     </div>
     
@@ -84,8 +88,8 @@
   <div class="connect">
     <h2>Let’s connect and collaborate!</h2>
     <p style="margin-top: 20px;">
-      <a href="linkedin.com/kseniavarga" style="color:#00f0ff; margin: 0 15px;">LinkedIn</a> • 
-      <a href="x.com/bzimpy" style="color:#00f0ff; margin: 0 15px;">X / Twitter</a>
+      <a href="YOUR_LINKEDIN_URL" style="color:#7dd3fc; margin: 0 15px;">LinkedIn</a> • 
+      <a href="YOUR_X_URL" style="color:#7dd3fc; margin: 0 15px;">X / Twitter</a>
     </p>
   </div>
 
