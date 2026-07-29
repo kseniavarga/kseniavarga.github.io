@@ -76,8 +76,13 @@
       <h1>Hi, I’m Ksenia</h1>
       <p>Here you’ll find selected projects from my journey in materials science and photonics. My interests span molecular and materials design and engineering, ALD, III-V semiconductors, nonlinear photonics, and quantum technologies. I would be happy to connect with others working in similar areas. Thanks for visiting!</p>
 
-      <!-- Filled automatically from site-pages.js -->
-      <ul id="site-nav" aria-label="Site sections"></ul>
+      <ul aria-label="Site sections">
+        <li><a href="education.html" class="edu-link"><strong>Education</strong></a></li>
+        <li><a href="work_experience.html" class="job-link"><strong>Select job experiences</strong></a></li>
+        <li><a href="chemistry.html" class="chem-link"><strong>Chem projects</strong></a></li>
+        <li><a href="photonics-demo.html" class="photon-link"><strong>Photon projects</strong></a></li>
+        <li><a href="#" class="other-link"><strong>Other stuff</strong></a></li>
+      </ul>
     </div>
 
     <div class="photo">
@@ -92,36 +97,6 @@
       <a href="https://x.com/bzimpy" style="color:#7dd3fc; margin: 0 15px;" target="_blank" rel="noopener">X / Twitter</a>
     </p>
   </div>
-
-  <script src="site-pages.js"></script>
-  <script>
-    (function () {
-      var nav = document.getElementById("site-nav");
-      var pages = (window.SITE_PAGES || []).slice().sort(function (a, b) {
-        return (a.order || 0) - (b.order || 0);
-      });
-
-      pages.forEach(function (page) {
-        var li = document.createElement("li");
-        var strong = document.createElement("strong");
-        strong.textContent = page.label;
-
-        if (page.href) {
-          var a = document.createElement("a");
-          a.href = page.href;
-          if (page.class) a.className = page.class;
-          a.appendChild(strong);
-          li.appendChild(a);
-        } else {
-          var span = document.createElement("span");
-          span.className = "pending" + (page.class ? " " + page.class : "");
-          span.appendChild(strong);
-          li.appendChild(span);
-        }
-        nav.appendChild(li);
-      });
-    })();
-  </script>
 
 </body>
 </html>
