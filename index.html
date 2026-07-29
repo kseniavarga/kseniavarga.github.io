@@ -3,28 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ksenia Varga | Photonics Researcher</title>
+  <title>Ksenia Varga | Photonics Researcher and Materials Engineer</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', system-ui, sans-serif; }
-    
-    .hero {
-      height: 100vh;
-      background-image: url('hero-background.png');
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      color: white;
+      line-height: 1.6;
+      background: #1e1e1e;
+    }
+
+    /* Top navigation */
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 18px;
+      padding: 14px 20px;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .site-nav a {
+      color: #eee;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: white;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    /* Shared muted page background */
+    .page-bg {
+      min-height: 100vh;
+      background-image: url('Muted background.png');
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
       position: relative;
+    }
+    .page-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      pointer-events: none;
+    }
+
+    /* Hero / landing */
+    .hero {
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      padding: 90px 20px 40px;
+      position: relative;
     }
-    .hero::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.38); z-index: 1; }
-    
-    .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 20px; }
-    .hero h1 { font-size: clamp(2.8rem, 8vw, 5rem); margin-bottom: 12px; }
-    .hero p { font-size: clamp(1.15rem, 3vw, 1.6rem); margin-bottom: 40px; }
-    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2.8rem, 8vw, 5rem);
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: clamp(1.15rem, 3vw, 1.6rem);
+      margin-bottom: 40px;
+    }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -41,20 +101,90 @@
     }
     .btn:hover { transform: translateY(-4px) scale(1.05); }
     .alien { width: 42px; height: 42px; border-radius: 50%; }
+
+    /* About section (scroll target) */
+    .about {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px 40px;
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .about .text { flex: 1; min-width: 300px; }
+    .about .text h2 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      margin-bottom: 20px;
+    }
+    .about .photo {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+    .about .photo img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .connect {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 50px 20px 70px;
+    }
+    .connect a {
+      color: #7dd3fc;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .connect a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Ksenia Varga</h1>
-      <p>Photonics Researcher and Materials Chemist</p>
-      <a href="about.html" class="btn">
-        <img src="alien.png" alt="Green alien" class="alien">
-        DON'T PANIC!
-      </a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="index.html" class="active">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="education.html">Education</a>
+    <a href="work_experience.html">Select Work Experience</a>
+    <a href="chemistry.html">Chemistry Projects</a>
+    <a href="photonics-demo.html">Photon Projects</a>
+  </nav>
+
+  <div class="page-bg">
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Ksenia Varga</h1>
+        <p>Photonics Researcher and Materials Engineer</p>
+        <a href="#about" class="btn">
+          <img src="alien.png" alt="Green alien" class="alien">
+          DON'T PANIC!
+        </a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="text">
+        <h2>Hi, I’m Ksenia</h2>
+        <p>Here you’ll find selected projects from my journey in materials science and photonics. My interests span molecular and materials design and engineering, ALD, III-V semiconductors, nonlinear photonics, and quantum technologies. I would be happy to connect with others working in similar areas. Thanks for visiting!</p>
+      </div>
+      <div class="photo">
+        <img src="your-photo.png" alt="Ksenia Varga">
+      </div>
+    </section>
+
+    <div class="connect">
+      <h2>Let’s connect and collaborate!</h2>
+      <p style="margin-top: 20px;">
+        <a href="https://linkedin.com/in/kseniavarga" target="_blank" rel="noopener">LinkedIn</a> •
+        <a href="https://x.com/bzimpy" target="_blank" rel="noopener">X / Twitter</a>
+      </p>
     </div>
-  </section>
+  </div>
 
 </body>
 </html>

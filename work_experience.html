@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Experiences — Ksenia Varga</title>
+  <title>Select Work Experience — Ksenia Varga</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -12,6 +12,36 @@
       background: #1e1e1e;
       line-height: 1.6;
     }
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 18px;
+      padding: 14px 20px;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .site-nav a {
+      color: #eee;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: white;
+      background: rgba(255, 255, 255, 0.12);
+    }
     .hero {
       min-height: 100vh;
       background-image: url('Muted background.png');
@@ -19,7 +49,7 @@
       background-position: center;
       background-attachment: fixed;
       position: relative;
-      padding: 60px 20px 80px;
+      padding: 100px 20px 80px;
     }
     .hero::after {
       content: '';
@@ -33,21 +63,11 @@
       max-width: 900px;
       margin: 0 auto;
     }
-    .back {
-      display: inline-block;
-      margin-bottom: 30px;
-      color: #aaa;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-    .back:hover { color: white; }
-    
     h1 {
       font-size: 2.6rem;
       margin-bottom: 25px;
       text-align: center;
     }
-    
     .intro {
       font-size: 1.05rem;
       margin-bottom: 50px;
@@ -57,7 +77,6 @@
       margin-right: auto;
       opacity: 0.95;
     }
-    
     .card {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -65,7 +84,6 @@
       padding: 28px 32px;
       margin-bottom: 28px;
     }
-    
     .card-header {
       display: flex;
       justify-content: space-between;
@@ -74,36 +92,30 @@
       gap: 10px;
       margin-bottom: 8px;
     }
-    
     .company {
       font-size: 1.35rem;
       font-weight: 700;
     }
-    
     .mode {
       font-size: 0.9rem;
       color: #7dd3fc;
       font-weight: 500;
     }
-    
     .title {
       font-size: 1.1rem;
       color: #cfcfcf;
       margin-bottom: 14px;
     }
-    
     .description {
       font-size: 1rem;
       margin-bottom: 16px;
       opacity: 0.95;
     }
-    
     .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
     }
-    
     .skill {
       background: rgba(125, 211, 252, 0.15);
       color: #7dd3fc;
@@ -115,17 +127,23 @@
 </head>
 <body>
 
+  <nav class="site-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="education.html">Education</a>
+    <a href="work_experience.html" class="active">Select Work Experience</a>
+    <a href="chemistry.html">Chemistry Projects</a>
+    <a href="photonics-demo.html">Photon Projects</a>
+  </nav>
+
   <div class="hero">
     <div class="content">
-      <a href="about.html" class="back">← Back to About</a>
-      
-      <h1>Selected Experiences</h1>
-      
+      <h1>Select Work Experience</h1>
+
       <p class="intro">
         My professional path has spanned research, technical business development, project management, and sales across semiconductors, materials, quantum technologies, and clean manufacturing. This breadth taught me to adapt quickly, work independently when needed, and collaborate effectively across multidisciplinary teams.
       </p>
 
-      <!-- 1. ISES -->
       <div class="card">
         <div class="card-header">
           <div class="company">International Semiconductor Industry Group</div>
@@ -144,7 +162,6 @@
         </div>
       </div>
 
-      <!-- 2. ATLANT3D -->
       <div class="card">
         <div class="card-header">
           <div class="company">ATLANT3D</div>
@@ -164,7 +181,6 @@
         </div>
       </div>
 
-      <!-- 3. Project Manager -->
       <div class="card">
         <div class="card-header">
           <div class="company">Carleton University</div>
@@ -183,7 +199,6 @@
         </div>
       </div>
 
-      <!-- 4. Researcher (Carleton) -->
       <div class="card">
         <div class="card-header">
           <div class="company">Carleton University</div>
@@ -202,7 +217,6 @@
         </div>
       </div>
 
-      <!-- 5. NRC -->
       <div class="card">
         <div class="card-header">
           <div class="company">National Research Council of Canada</div>
@@ -220,7 +234,6 @@
         </div>
       </div>
 
-      <!-- 6. Assistant Editor -->
       <div class="card">
         <div class="card-header">
           <div class="company">atomiclayerdeposition.com</div>
@@ -237,7 +250,6 @@
         </div>
       </div>
 
-      <!-- 7. Teaching Assistant -->
       <div class="card">
         <div class="card-header">
           <div class="company">Carleton University</div>

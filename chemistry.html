@@ -12,6 +12,36 @@
       background: #1e1e1e;
       line-height: 1.65;
     }
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 18px;
+      padding: 14px 20px;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .site-nav a {
+      color: #eee;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: white;
+      background: rgba(255, 255, 255, 0.12);
+    }
     .hero {
       min-height: 100vh;
       background-image: url('Muted background.png');
@@ -19,7 +49,7 @@
       background-position: center;
       background-attachment: fixed;
       position: relative;
-      padding: 60px 20px 80px;
+      padding: 100px 20px 80px;
     }
     .hero::after {
       content: '';
@@ -33,21 +63,11 @@
       max-width: 1100px;
       margin: 0 auto;
     }
-    .back {
-      display: inline-block;
-      margin-bottom: 30px;
-      color: #aaa;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-    .back:hover { color: white; }
-    
     .title-img {
       display: block;
       max-width: 420px;
       margin: 0 auto 50px;
     }
-    
     .intro {
       display: flex;
       gap: 40px;
@@ -76,7 +96,6 @@
       margin-top: 8px;
       text-align: center;
     }
-    
     .photo-row {
       display: flex;
       gap: 20px;
@@ -95,16 +114,14 @@
       max-width: 320px;
       text-align: center;
     }
-    
     .section {
       margin: 50px 0;
     }
     .section h2 {
       font-size: 1.8rem;
       margin-bottom: 20px;
-      color: #a8e6cf;
+      color: #0c5831;
     }
-    
     .ald-block {
       display: flex;
       gap: 40px;
@@ -121,13 +138,12 @@
       flex: 1;
       min-width: 280px;
     }
-    
-    a {
-      color: #7dd3fc;
+    .content a {
+      color: #0c5831;
       text-decoration: none;
+      font-weight: 600;
     }
-    a:hover { text-decoration: underline; }
-    
+    .content a:hover { text-decoration: underline; }
     ul {
       margin: 15px 0 15px 20px;
     }
@@ -136,14 +152,19 @@
 </head>
 <body>
 
+  <nav class="site-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="education.html">Education</a>
+    <a href="work_experience.html">Select Work Experience</a>
+    <a href="chemistry.html" class="active">Chemistry Projects</a>
+    <a href="photonics-demo.html">Photon Projects</a>
+  </nav>
+
   <div class="hero">
     <div class="content">
-      <a href="about.html" class="back">← Back to About</a>
-      
-      <!-- Title sticker (transparent) -->
       <img src="chem-title.png" alt="Chemistry Projects" class="title-img">
 
-      <!-- Intro + main photo -->
       <div class="intro">
         <div class="intro-text">
           <p>I trained as an inorganic synthetic chemist with a focus on main-group chemistry. My graduate research combined synthetic and computational methods to investigate phosphorus-based Lewis acid catalysis and their reactivity toward small molecules—transformations that lie at the heart of major industrial processes such as catalytic hydrogenations and the activation of gases like hydrogen or carbon dioxide.</p>
@@ -154,7 +175,6 @@
         </div>
       </div>
 
-      <!-- Three photo row -->
       <div class="photo-row">
         <div class="photo-item">
           <img src="figure2a.jpg" alt="NMR tube">
@@ -163,37 +183,31 @@
           <img src="figure2b.jpg" alt="Poster presentation">
         </div>
         <div class="photo-item">
-          <img src="figure2c.jpg" alt="XRD">
+          <img src="Figure2c.jpg" alt="XRD">
         </div>
       </div>
       <p class="caption" style="margin-top: -30px; margin-bottom: 50px;">
-        Figure 2: (a) NMR tube of my decomposing compound (bad) in a cool rainbow (good), (b) presenting the results of my research at CSC 2022 in Calgary. (c) XRD of one of my compounds - hydrogen atoms omitted forclarity. ACN (MeCN) solvent is included to show proximity to cation</p>
+        Figure 2: (a) NMR tube of my decomposing compound (bad) in a cool rainbow (good), (b) presenting the results of my research at CSC 2022 in Calgary. (c) XRD of one of my compounds - hydrogen atoms omitted for clarity. ACN (MeCN) solvent is included to show proximity to cation</p>
 
-      <!-- ALD section -->
       <div class="ald-block">
         <img src="conference.jpg" alt="Conference">
         <div class="ald-text">
-          <p>I was co-supervised by Dr. Sean Barry, a leading researcher in atomic layer deposition (ALD). This introduced me to surface chemistry, precursor design, and synthesis, and connected me to the broader ALD community. I contributed to the creation of the <a href="https://www.atomiclayerdeposition.com/" target="_blank">Atomic Layer Deposition Community website</a> and the <a href="https://journal.atomiclayerdeposition.com/" target="_blank">Open-Diamond Academic Journal</a>.</p>
-          
+          <p>I was co-supervised by Dr. Sean Barry, a leading researcher in atomic layer deposition (ALD). This introduced me to surface chemistry, precursor design, and synthesis, and connected me to the broader ALD community. I contributed to the creation of the <a href="https://www.atomiclayerdeposition.com/" target="_blank" rel="noopener">Atomic Layer Deposition Community website</a> and the <a href="https://journal.atomiclayerdeposition.com/" target="_blank" rel="noopener">Open-Diamond Academic Journal</a>.</p>
           <p style="margin-top: 18px;">Since moving into semiconductors, I continue to follow ALD chemistry and its growing role in the industry.</p>
         </div>
       </div>
 
-      <!-- Other Chemistry Experience -->
       <div class="section">
-        <h2>Other Chemistry Experience</h2>
-        
+        <h2>Other Chemistry Experiences</h2>
         <ul>
           <li><strong>National Research Council of Canada</strong> — Analytical chemist analyzing indoor air samples by HPLC and GC-MS. Additional projects included digitizing the chemical inventory, investigating chemical effects of building materials, and literature screening for a mould laboratory.</li>
-          
           <li style="margin-top: 18px;"><strong>Freelance (Upwork)</strong>
             <ul style="margin-top: 8px;">
               <li>Formula optimization for a Canadian sparkling beverage company (carbonation vs. packaging integrity)</li>
               <li>Emulsifier optimization and product formulation for a clean skincare startup</li>
             </ul>
           </li>
-          
-          <li style="margin-top: 18px;"><strong>Chemistry Magic Show</strong> (Carleton University) — Annual public outreach event sharing chemistry demonstrations with children and adults. Featured in <a href="https://online.flipbuilder.com/bftp/zxnl/mobile/index.html#p=1" target="_blank">Carleton’s Science magazine (Eureka!)</a>.</li>
+          <li style="margin-top: 18px;"><strong>Chemistry Magic Show</strong> (Carleton University) — Annual public outreach event sharing chemistry demonstrations with children and adults. Featured in <a href="https://online.flipbuilder.com/bftp/zxnl/mobile/index.html#p=1" target="_blank" rel="noopener">Carleton’s Science magazine (Eureka!)</a>.</li>
         </ul>
       </div>
 
