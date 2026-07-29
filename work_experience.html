@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Experiences — Ksenia Varga</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Calibri, Arial, sans-serif;
+      color: white;
+      background: #1e1e1e;
+      line-height: 1.6;
+    }
+    .hero {
+      min-height: 100vh;
+      background-image: url('Muted background.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      padding: 60px 20px 80px;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .back {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .back:hover { color: white; }
+    
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    
+    .intro {
+      font-size: 1.05rem;
+      margin-bottom: 50px;
+      text-align: center;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.95;
+    }
+    
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 28px;
+    }
+    
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    
+    .company {
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+    
+    .mode {
+      font-size: 0.9rem;
+      color: #7dd3fc;
+      font-weight: 500;
+    }
+    
+    .title {
+      font-size: 1.1rem;
+      color: #cfcfcf;
+      margin-bottom: 14px;
+    }
+    
+    .description {
+      font-size: 1rem;
+      margin-bottom: 16px;
+      opacity: 0.95;
+    }
+    
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    
+    .skill {
+      background: rgba(125, 211, 252, 0.15);
+      color: #7dd3fc;
+      font-size: 0.82rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="content">
+      <a href="about.html" class="back">← Back to About</a>
+      
+      <h1>Selected Experiences</h1>
+      
+      <p class="intro">
+        My professional path has spanned research, technical business development, project management, and sales across semiconductors, materials, quantum technologies, and clean manufacturing. This breadth taught me to adapt quickly, work independently when needed, and collaborate effectively across multidisciplinary teams.
+      </p>
+
+      <!-- 1. ISES -->
+      <div class="card">
+        <div class="card-header">
+          <div class="company">ISES</div>
+          <div class="mode">Remote</div>
+        </div>
+        <div class="title">Business Development / Technical Sales</div>
+        <p class="description">
+          Drove business development in the semiconductor and quantum sectors by managing international conferences, cultivating C-suite relationships, and implementing strategic CRM solutions to improve lead management and team efficiency.
+        </p>
+        <div class="skills">
+          <span class="skill">Technical sales</span>
+          <span class="skill">Stakeholder management</span>
+          <span class="skill">CRM implementation</span>
+          <span class="skill">Conference management</span>
+          <span class="skill">Semiconductor & quantum</span>
+        </div>
+      </div>
+
+      <!-- 2. ATLANT3D -->
+      <div class="card">
+        <div class="card-header">
+          <div class="company">ATLANT3D</div>
+          <div class="mode">In-person</div>
+        </div>
+        <div class="title">Technical Business Development</div>
+        <p class="description">
+          Leveraged materials engineering expertise to drive technical business development, focusing on application refinement, product definition, and strategic partnerships within the semiconductor, additive manufacturing, and related high-tech industries.
+        </p>
+        <div class="skills">
+          <span class="skill">Materials engineering</span>
+          <span class="skill">ALD / deposition techniques</span>
+          <span class="skill">Product development</span>
+          <span class="skill">Partnership development</span>
+          <span class="skill">AutoCAD / L-Edit</span>
+          <span class="skill">Technical sales</span>
+        </div>
+      </div>
+
+      <!-- 3. Project Manager -->
+      <div class="card">
+        <div class="card-header">
+          <div class="company">Carleton University</div>
+          <div class="mode">Hybrid</div>
+        </div>
+        <div class="title">Project Manager</div>
+        <p class="description">
+          Led government-sponsored multidisciplinary projects, overseeing planning, budget management, risk assessment, and stakeholder communication to ensure milestones were met.
+        </p>
+        <div class="skills">
+          <span class="skill">Project planning</span>
+          <span class="skill">Budget management</span>
+          <span class="skill">Stakeholder management</span>
+          <span class="skill">Risk assessment</span>
+          <span class="skill">Multidisciplinary coordination</span>
+        </div>
+      </div>
+
+      <!-- 4. Researcher (Carleton) -->
+      <div class="card">
+        <div class="card-header">
+          <div class="company">Carleton University</div>
+          <div class="mode">In-person</div>
+        </div>
+        <div class="title">Researcher</div>
+        <p class="description">
+          Conducted advanced materials research and process development specializing in synthesis, material characterization, and computational chemistry (DFT) to optimize processes and product quality.
+        </p>
+        <div class="skills">
+          <span class="skill">Materials characterization</span>
+          <span class="skill">DFT</span>
+          <span class="skill">Process development</span>
+          <span class="skill">Technical writing</span>
+          <span class="skill">Thin-film processes</span>
+        </div>
+      </div>
+
+      <!-- 5. NRC -->
+      <div class="card">
+        <div class="card-header">
+          <div class="company">National Research Council of Canada</div>
+          <div class="mode">In-person</div>
+        </div>
+        <div class="title">Researcher / Analytical Chemist</div>
+        <p class="description">
+          Analyzed indoor air samples using HPLC and GC-MS (approximately 80 samples per week). Additional work included chemical inventory digitization, materials investigations, and literature screening for laboratory operations.
+        </p>
+        <div class="skills">
+          <span class="skill">HPLC / GC-MS</span>
+          <span class="skill">Analytical chemistry</span>
+          <span class="skill">Data analysis</span>
+          <span class="skill">Laboratory operations</span>
+        </div>
+      </div>
+
+      <!-- 6. Assistant Editor -->
+      <div class="card">
+        <div class="card-header">
+          <div class="company">atomiclayerdeposition.com</div>
+          <div class="mode">Remote</div>
+        </div>
+        <div class="title">Assistant Editor</div>
+        <p class="description">
+          Contributed to the development and content of the Atomic Layer Deposition community website and supported the Open-Diamond Academic Journal.
+        </p>
+        <div class="skills">
+          <span class="skill">Scientific communication</span>
+          <span class="skill">Content development</span>
+          <span class="skill">ALD community</span>
+        </div>
+      </div>
+
+      <!-- 7. Teaching Assistant -->
+      <div class="card">
+        <div class="card-header">
+          <div class="company">Carleton University</div>
+          <div class="mode">In-person</div>
+        </div>
+        <div class="title">Teaching Assistant</div>
+        <p class="description">
+          Supported undergraduate courses in General Chemistry, Organic Chemistry, and Physical Chemistry through laboratory instruction, tutoring, and grading.
+        </p>
+        <div class="skills">
+          <span class="skill">Teaching</span>
+          <span class="skill">Laboratory instruction</span>
+          <span class="skill">General / Organic / Physical Chemistry</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
