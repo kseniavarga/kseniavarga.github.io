@@ -11,7 +11,7 @@
  */
 window.SITE_PAGES = [
   { label: "Education", href: "education.html", class: "edu-link", order: 1 },
-  { label: "Select job experiences", href: null, class: "job-link", order: 2 },
+  { label: "Select job experiences", href: "work_experience.html", class: "job-link", order: 2 },
   { label: "Chem projects", href: "chemistry.html", class: "chem-link", order: 3 },
   { label: "Photon projects", href: "photonics-demo.html", class: "photon-link", order: 4 },
   { label: "Other stuff", href: null, class: "other-link", order: 5 },
