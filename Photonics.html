@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photonics — Ksenia Varga</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Calibri, Arial, sans-serif;
+      color: white;
+      background: #1e1e1e;
+      line-height: 1.65;
+    }
+    .hero {
+      min-height: 100vh;
+      background-image: url('Muted background.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      padding: 60px 20px 80px;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .back {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .back:hover { color: white; }
+    
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 1.55rem;
+      margin: 40px 0 16px;
+      color: #a8e6cf;
+    }
+    
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+      opacity: 0.95;
+    }
+    
+    a {
+      color: #7dd3fc;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    
+    .section {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="content">
+      <a href="about.html" class="back">← Back to About</a>
+      
+      <h1>Semiconductors, Photonics & Nonlinear Optics</h1>
+
+      <div class="section">
+        <p>My path into photonics began with atomic layer deposition and its applications in semiconductor manufacturing. Working directly with industry stakeholders and attending semiconductor conferences gave me practical insight into the technology landscape. In parallel, I pursued independent study of semiconductor physics, optoelectronics, and nonlinear optics through open-source materials and formal coursework. This foundation led me to photonic integrated circuits, where I now focus on design and simulation of III-V components.</p>
+      </div>
+
+      <div class="section">
+        <h2>Current Projects</h2>
+        <p>Currently, I design and simulate III-V passive photonic components, with a particular focus on subwavelength grating (SWG) structures in III-Vs. One of my current efforts involves developing low-loss AlGaAs-on-SiO₂ SWG waveguides intended for nonlinear quantum processes (including SPDC and SFWM near 1.55 µm). A key challenge in these designs is mode mismatch when coupling from conventional strip waveguides; I address this with chirped mode converters that help excite clean Bloch modes. In parallel, I am also building a library of novel III-V components that could later support a process design kit (PDK).</p>
+      </div>
+
+      <div class="section">
+        <h2>Tools & Methods</h2>
+        <p>I work with a range of photonic simulation platforms, including Optiwave OptiFDTD, OptiOmega, Tidy3D, Lumerical MODE, and Lumerical INTERCONNECT, KLayout, L-Edit. Several of these tools I learned independently.</p>
+      </div>
+
+      <div class="section">
+        <h2>Foundations & Coursework</h2>
+        <p>After establishing a foundation in semiconductors and optoelectronics through coursework (“theory of semiconductors” and “introduction to optoelectronics”) and independent studies, I completed a Silicon Photonics course on edX (<a href="https://www.edx.org/learn/engineering/university-of-british-columbia-silicon-photonics-design-fabrication-and-data-ana" target="_blank">link</a>) taught by Prof. Lukas Chrostowski. As part of the course I designed and simulated my own Mach-Zehnder interferometer (MZI) circuits, gaining practical experience with silicon photonic design flows.</p>
+      </div>
+
+      <div class="section">
+        <h2>Interests & Future Directions</h2>
+        <p>I am particularly interested in nonlinear optics for quantum and telecom applications. I am also exploring photonic components that can support AI workloads, with a longer-term interest in fully optical AI chips. My work sits at the intersection of materials, device design, and emerging computing systems :)</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
