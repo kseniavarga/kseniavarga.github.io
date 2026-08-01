@@ -8,5 +8,5 @@ window.SITE_PAGES = [
   { label: "Education", href: "education.html", order: 2 },
   { label: "Select Work Experience", href: "work_experience.html", order: 3 },
   { label: "Chemistry Projects", href: "chemistry.html", order: 4 },
-  { label: "Photon Projects", href: "Photonics.html", order: 5 },
+  { label: "λ Projects", href: "Photonics.html", order: 5 },
 ];
